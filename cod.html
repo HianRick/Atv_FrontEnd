@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "eng">
     <head>
-        <meta charset="UTF-80">
+        <meta charset="UTF-8">
         <meta name ="viewport" content="width= device-width, initial-scale = 1.0">
         <title>Bora Bill Chat</title>
         <link rel="stylesheet" href="layout.css">
@@ -33,14 +33,46 @@
                 <div><strong>Você diz:</strong></div>
                 <div class="ms2">Bora bill, muito funny kkkkk</div>
             </div>
+            <div class="Menssagem1">
+                <div><strong>Bill diz:</strong></div>
+                <div class="ms1">Eai man, viu aquele meme do amostradinho?</div>
+            </div>
+            <div class="Menssagem2">
+                <div><strong>Bill diz:</strong></div>
+                <div class="ms1">Muito enraçado kkk</div>
+            </div>
         </div>
 
-        <form id="enviarmenssagem"  method="post">
-            <input type="text" placeholder="Digite sua menssagem...">
-            <button type="submit"> Enviar</button>
+        <form id="enviarmenssagem"  action="cod.html" method="post" >
+            <input id = "conteudoMenssagem"type="text" placeholder="Digite sua menssagem..."/>
+            <button type="submit">Enviar</button>
         </form>
         </div>
-    </body>
-</html>
 
-skksksksks teste
+
+        <script>
+            const conteudo = document.getElementById("conteudoMenssagem")
+            const formulario = document.getElementById("enviarMenssagem")
+            const chatWindow = document.querySelector('.Chat');
+
+            formulario.addEventListener("submit", function(event){
+                event.preventDefault();
+                const resposta = conteudo.value.trim();
+                if(resposta != ''){
+                    adicionaMensagem(resposta)
+                }})
+
+                function adicionaMensagem(resposta){
+                    const novoItem = document.createElement('div');
+                    novoItem.className = 'Menssagem4';
+                    novoItem.innerHTML = '<div class="ms2">{mensagem}</div>';
+                    chatWindow.appendChild(novoItem);
+                }
+        </script>
+        
+    </body>
+
+
+
+
+</html>

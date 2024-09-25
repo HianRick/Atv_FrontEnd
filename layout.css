@@ -55,7 +55,8 @@
 }
 
 html{
-    background-color: rgb(253, 229, 197);
+
+    background-color: rgb(230, 216, 199);
 }
 
 #foto img{
@@ -66,3 +67,9 @@ html{
     object-fit: cover;
     border-radius: 100px;
 }
+
+.Chat {
+    padding: 12px;
+    height: 390px;
+    overflow: scroll;
+  }
