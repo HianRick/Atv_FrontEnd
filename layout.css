@@ -1,0 +1,68 @@
+.Perfil{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(135, 141, 208);
+    border: solid black 3px;
+}
+.Chat{
+    display: flex;
+    flex-direction: column;
+    border: solid 3px blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.Menssagem1, .Menssagem2{
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.Menssagem3, .Menssagem4{
+    display: block;
+    align-self: flex-end;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.ms1{
+    display: inline-block;
+    background-color: rgb(135, 141, 208);
+
+}
+
+.ms2{
+    display: inline-block;
+    background-color: rgb(113, 223, 131);
+}
+
+#enviarmenssagem {
+    padding: 10px;
+    border: solid;
+    border-color: blue;
+}
+#enviarmenssagem input{
+    font-size: medium;
+    width: 85%;;
+    height: 30px;
+}
+#enviarmenssagem button{
+    font-size: medium;
+    width: 10%;
+    height: 30px;
+}
+
+html{
+    background-color: rgb(253, 229, 197);
+}
+
+#foto img{
+    display: flex;
+    justify-content: left;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
